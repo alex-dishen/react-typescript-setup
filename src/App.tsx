@@ -1,11 +1,14 @@
-import './styles/normalize.scss';
+import { Routes, Route } from 'react-router-dom';
+import useScrollToTop from 'hooks/useScrollToTop';
 
-function App() {
-  // eslint-disable-next-line prettier/prettier
+const App = () => {
+  useScrollToTop();
+
   return (
-    <>
-    </>
+    <Routes>
+      <Route path="/" element={} />
+    </Routes>
   );
-}
+};
 
 export default App;
